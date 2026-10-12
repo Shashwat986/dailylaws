@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DailyLaws.IN — Know Your Everyday Legal Rights in Modern India</title>
+  <meta name="description" content="A comprehensive, citizen-first legal guide for India. Learn your daily rights regarding traffic police, arrests, protests, landlord disputes, banking fraud, cyber scams, and constitutional protections.">
+  <meta name="keywords" content="DailyLaws, Indian laws, Traffic Police rights, Arrest rules, Section 144, BNSS 2024, BNS 2024, DigiLocker rules, RERA compensation, Zero FIR, Good Samaritan Law, 1930 Cyber helpline">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="DailyLaws.IN Homepage">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M5 7l7-5 7 5M3 13l4-7 4 7H3zm10 0l4-7 4 7h-8zM3 19h18"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">DailyLaws<span>.IN</span></span>
+          <span class="brand-tagline">Citizen Rights & Legal Guide</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <button id="openSosBtn" class="btn btn-sos" aria-label="Emergency Rights Quick Script">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <span>Emergency SOS</span>
+        </button>
+
+        <button id="bookmarksFilterBtn" class="btn btn-outline" title="Show Bookmarked Laws">
+          <span>⭐ Saved</span>
+        </button>
+
+        <button id="printGuideBtn" class="btn-icon" title="Print Pocket Cheat Sheet">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+        </button>
+
+        <button id="themeToggleBtn" class="btn-icon" title="Switch Theme">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-badge">
+        <span>🇮🇳 UPDATED FOR 2024–2026 CRIMINAL CODES (BNSS & BNS)</span>
+      </div>
+
+      <h1 class="hero-title">
+        The Laws Every Indian <span class="highlight">Must Know</span> in Daily Life.
+      </h1>
+
+      <p class="hero-desc">
+        Plain-English statutory rights, Supreme Court guidelines, actionable citizen scripts, and emergency rules for traffic stops, arrests, protests, landlords, and financial fraud.
+      </p>
+
+      <!-- Instant Search -->
+      <div class="search-wrapper">
+        <div class="search-input-group">
+          <span class="search-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Search any law, right, or scenario (e.g., 'car keys', 'bail', 'rent', 'zero fir')..."
+            autocomplete="off"
+          >
+          <button id="searchClearBtn" class="search-clear-btn" aria-label="Clear Search">✕</button>
+        </div>
+      </div>
+
+      <!-- Quick Search Suggestions -->
+      <div class="quick-tags">
+        <span>Popular queries:</span>
+        <button class="quick-tag-chip protest-highlight" data-tag="Gyanesh Kumar">⚖️ Gyanesh Kumar Protests</button>
+        <button class="quick-tag-chip protest-highlight" data-tag="CJP">CJP Movement</button>
+        <button class="quick-tag-chip" data-tag="Metro shutdown">Metro Closures</button>
+        <button class="quick-tag-chip" data-tag="Freedom Park">Freedom Park</button>
+        <button class="quick-tag-chip" data-tag="Bus detention">Bus Detentions</button>
+        <button class="quick-tag-chip" data-tag="keys">Ignition Keys</button>
+        <button class="quick-tag-chip" data-tag="digilocker">DigiLocker</button>
+        <button class="quick-tag-chip" data-tag="zero fir">Zero FIR</button>
+        <button class="quick-tag-chip" data-tag="section 144">Section 144 / 163</button>
+        <button class="quick-tag-chip" data-tag="upi scam">1930 Cyber Fraud</button>
+      </div>
+
+      <!-- Legal Transition Info Banner -->
+      <div class="era-banner">
+        <div class="era-banner-content">
+          <span class="era-badge">CRITICAL LEGAL UPDATE</span>
+          <div>
+            <strong>New Criminal Laws In Effect:</strong> The Bharatiya Nagarik Suraksha Sanhita (BNSS), Bharatiya Nyaya Sanhita (BNS), and Bharatiya Sakshya Adhiniyam (BSA) have replaced CrPC, IPC, and Evidence Act. We cross-reference both codes on every card.
+          </div>
+        </div>
+      </div>
+
+      <!-- 2026 Supreme Court Protest Directives Spotlight -->
+      <div class="protest-spotlight-banner">
+        <div class="spotlight-header">
+          <span class="spotlight-tag">OCTOBER 2026 APEX COURT PRECEDENT</span>
+          <span class="spotlight-badge">Special Intensive Revision (SIR) & Gyanesh Kumar Protests</span>
+        </div>
+        <div class="spotlight-body">
+          <h3>Mass Protests, Transit Rights & Election Commission Accountability</h3>
+          <p>
+            In landmark directives following widespread detentions during the <strong>Cockroach Janta Party (CJP)</strong> protests against Chief Election Commissioner <strong>Gyanesh Kumar</strong>, the Supreme Court of India (Bench of Justices Joymalya Bagchi & V. Mohana) held that authorities <strong>cannot weaponize transit shutdowns (Delhi Metro/rail closures)</strong> or <strong>arbitrarily detain peaceful demonstrators</strong>. Section 163 BNSS (prohibitory orders) cannot be used to block citizen access to courts.
+          </p>
+          <div class="spotlight-actions">
+            <button class="btn btn-outline quick-tag-chip" data-tag="Gyanesh Kumar" style="background: rgba(255,255,255,0.12); color: white; border-color: rgba(255,255,255,0.3); font-size: 0.85rem; padding: 0.4rem 0.8rem;">
+              View All Specific Rights in this Movement →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories & Laws Section -->
+  <main class="container categories-section">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Explore Legal Rights by Scenario</h2>
+        <p class="section-subtitle">Click a category below to filter specific domains of Indian law.</p>
+      </div>
+      <div id="lawsCountText" class="section-subtitle" style="font-weight: 700; color: var(--brand-navy);">
+        Loading laws...
+      </div>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="category-chips-grid" id="categoryFilters">
+      <!-- Populated dynamically via app.js -->
+    </div>
+
+    <!-- Law Cards Container -->
+    <div class="laws-container" id="lawsGrid">
+      <!-- Populated dynamically via app.js -->
+    </div>
+  </main>
+
+  <!-- Myths vs Facts Section -->
+  <section class="myths-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Common Legal Myths Busted</h2>
+          <p class="section-subtitle">Widespread misconceptions that police, landlords, or scammers use against uninformed citizens.</p>
+        </div>
+      </div>
+
+      <div class="myths-grid" id="mythsGrid">
+        <!-- Populated dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Helplines & Emergency Directory -->
+  <section class="helplines-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Essential National Citizen Helplines</h2>
+          <p class="section-subtitle">Save these 24/7 toll-free government hotlines on your phone for urgent situations.</p>
+        </div>
+      </div>
+
+      <div class="helplines-grid" id="helplinesGrid">
+        <!-- Populated dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal Glossary Section -->
+  <section class="glossary-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Everyday Legal Terms Decoded</h2>
+          <p class="section-subtitle">Crucial legal vocabulary explained simply so you understand court and police language.</p>
+        </div>
+      </div>
+
+      <div class="glossary-grid" id="glossaryGrid">
+        <!-- Populated dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SOS Emergency Modal -->
+  <div class="modal-overlay" id="sosModal">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="sosModalTitle">
+      <div class="modal-header">
+        <h3 id="sosModalTitle">
+          <span style="color: #dc2626;">🚨</span> Emergency Citizen Script
+        </h3>
+        <button class="modal-close-btn" id="closeSosBtn" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Select your immediate scenario below to view the exact constitutional or statutory phrase to politely and firmly state to an officer or authority.
+        </p>
+
+        <!-- Scenario Selection -->
+        <div class="sos-scenario-selector" id="sosScenarioList">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+        <!-- The Spoken Script Card -->
+        <div class="sos-script-card">
+          <div class="sos-script-label">Say This Firmly & Politely:</div>
+          <div class="sos-script-text" id="sosScriptDisplay">
+            Loading script...
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; margin-bottom: 1.25rem;">
+          <button class="btn btn-outline" id="sosSpeakBtn" style="width: 100%;">
+            🔊 Speak This Script Out Loud (Audio)
+          </button>
+        </div>
+
+        <!-- Actionable Steps Checklist -->
+        <div class="sos-steps-box">
+          <div class="sos-steps-title">Immediate Field Protocol:</div>
+          <ol id="sosStepsDisplay">
+            <!-- Populated dynamically via app.js -->
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span>ℹ️</span>
+    <span id="toastMessage">Action completed</span>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 2v20M5 7l7-5 7 5M3 13l4-7 4 7H3zm10 0l4-7 4 7h-8zM3 19h18"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">DailyLaws<span>.IN</span></span>
+            </div>
+          </div>
+          <p>
+            An independent civic education initiative simplifying India's daily laws, constitutional freedoms, and legal procedures for ordinary citizens.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Categories</h4>
+          <ul>
+            <li><a href="#categoryFilters">Traffic Police Rules</a></li>
+            <li><a href="#categoryFilters">Arrest & Custody Rights</a></li>
+            <li><a href="#categoryFilters">Protests & Article 19</a></li>
+            <li><a href="#categoryFilters">Tenant & RERA Protections</a></li>
+            <li><a href="#categoryFilters">UPI & Banking Fraud</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul>
+            <li><a href="https://echallan.parivahan.gov.in" target="_blank" rel="noopener">Parivahan e-Challan</a></li>
+            <li><a href="https://cybercrime.gov.in" target="_blank" rel="noopener">Cyber Crime Portal</a></li>
+            <li><a href="https://rtionline.gov.in" target="_blank" rel="noopener">RTI Online Portal</a></li>
+            <li><a href="https://cms.rbi.org.in" target="_blank" rel="noopener">RBI Ombudsman (CMS)</a></li>
+            <li><a href="https://nalsa.gov.in" target="_blank" rel="noopener">NALSA Free Legal Aid</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Hotlines</h4>
+          <ul>
+            <li><a href="tel:112">112 — National Emergency</a></li>
+            <li><a href="tel:1930">1930 — Cyber Financial Fraud</a></li>
+            <li><a href="tel:1091">1091 — Women's Helpline</a></li>
+            <li><a href="tel:1915">1915 — Consumer Helpline</a></li>
+            <li><a href="tel:15100">15100 — Legal Services</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Legal Disclaimer -->
+      <div class="footer-disclaimer">
+        <strong>⚠️ Civic Educational Disclaimer:</strong> DailyLaws.IN is created strictly for civic awareness and public education purposes. Content is based on statutory provisions of the Motor Vehicles Act, Model Tenancy Act, Consumer Protection Act, Constitution of India, and the new criminal laws (BNSS, BNS, BSA 2024), alongside Supreme Court landmark rulings. It does not constitute formal legal counsel or establish an attorney-client relationship. If you are facing criminal charges or serious legal dispute, immediately seek assistance from a certified legal practitioner or your district Legal Services Authority (NALSA Toll-Free: 15100).
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024–2026 DailyLaws.IN. Dedicated to legal literacy and citizen empowerment across India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

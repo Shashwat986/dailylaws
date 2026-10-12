@@ -1,0 +1,21 @@
+{
+  "name": "dailylaws-in",
+  "version": "1.0.0",
+  "description": "DailyLaws.IN — Know Your Everyday Legal Rights in Modern India",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "serve:py": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "indian-laws",
+    "citizen-rights",
+    "bnss-2024",
+    "bns-2024",
+    "protest-rights",
+    "traffic-police"
+  ],
+  "author": "DailyLaws.IN",
+  "license": "MIT"
+}
